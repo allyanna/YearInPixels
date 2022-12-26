@@ -12,6 +12,7 @@ import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class YearPanel extends JPanel {
 
@@ -20,22 +21,25 @@ public class YearPanel extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public static void main(String[] args) {
-		YearPanel panel = new YearPanel();
-	}
-
 	public YearPanel() {
 
 		this.setLayout(new BorderLayout());
 
-		this.add(new VerticalLabel("Day"), BorderLayout.WEST);
-		this.add(new JLabel("Month"), BorderLayout.NORTH);
+		// west
+		this.add(new VerticalLabel("Day", SwingConstants.CENTER), BorderLayout.WEST);
+
+		// north
+		JPanel topPanel = new JPanel();
+		topPanel.add(new JLabel("Month", SwingConstants.CENTER));
+		this.add(topPanel, BorderLayout.NORTH);
+		
+		// center
 		this.add(new calendarPanel(), BorderLayout.CENTER);
 	}
 
 	private class VerticalLabel extends JLabel {
-		public VerticalLabel(String s) {
-			super(s);
+		public VerticalLabel(String s, int c) {
+			super(s, c);
 		}
 
 		@Override

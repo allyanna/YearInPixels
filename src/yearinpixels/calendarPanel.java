@@ -26,7 +26,7 @@ public class calendarPanel extends JPanel {
 				JButton button = new JButton("" + d);
 				button.setFont(new Font("Cambria", Font.PLAIN, 15));
 				button.setMargin(new Insets(1, 1, 1, 1));
-				button.setPreferredSize(new Dimension(30, 30));
+				button.setPreferredSize(new Dimension(26, 26));
 				this.add(button);
 			}
 	}
