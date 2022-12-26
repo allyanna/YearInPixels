@@ -35,6 +35,9 @@ public class YearPanel extends JPanel {
 		
 		// center
 		this.add(new calendarPanel(), BorderLayout.CENTER);
+		
+		// east
+		this.add(new InfoDayPanel(), BorderLayout.EAST);
 	}
 
 	private class VerticalLabel extends JLabel {

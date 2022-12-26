@@ -35,7 +35,7 @@ public class MainPanel extends JPanel {
 		this.setLayout(new BorderLayout());
 		this.add(new YearPanel(), BorderLayout.WEST);
 		
-		this.add(new InfoDayPanel(), BorderLayout.EAST);
+		//this.add(new InfoDayPanel(), BorderLayout.EAST);
 
 		// buttons in main
 		JPanel buttonPanel = new JPanel();
