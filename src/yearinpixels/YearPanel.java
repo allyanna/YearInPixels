@@ -25,13 +25,7 @@ public class YearPanel extends JPanel {
 
 		this.setLayout(new BorderLayout());
 
-		// west
-		this.add(new VerticalLabel("Day", SwingConstants.CENTER), BorderLayout.WEST);
-
-		// north
-		JPanel topPanel = new JPanel();
-		topPanel.add(new JLabel("Month", SwingConstants.CENTER));
-		this.add(topPanel, BorderLayout.NORTH);
+	
 		
 		// center
 		this.add(new calendarPanel(), BorderLayout.CENTER);
